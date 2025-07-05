@@ -1,0 +1,38 @@
+# EditorConfig is awesome: https://EditorConfig.org
+
+# Top-most EditorConfig file
+root = true
+
+[*]
+charset = utf-8
+indent_size = 4
+indent_style = space
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.php]
+indent_size = 4
+indent_style = space
+
+[*.js]
+indent_size = 4
+indent_style = space
+
+[*.json]
+indent_size = 4
+indent_style = space
+
+[*.blade.php]
+indent_size = 4
+indent_style = space
+
+[*.yml]
+indent_size = 4
+indent_style = space
+
+[*.env]
+indent_style = space

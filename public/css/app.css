@@ -1,0 +1,9 @@
+:root {
+    --tblr-primary: #7048e8;
+}
+
+.form-floating > .form-control:focus ~ label {
+    opacity: 0.85;
+    transform: scale(0.85) translateY(-1rem);
+}
+

@@ -1,0 +1,36 @@
+{
+	"$schema": "vendor/infection/infection/resources/schema.json",
+	"source": {
+		"directories": [
+			"app/"
+		],
+		"excludes": [
+			"vendor",
+			"tests"
+		]
+	},
+	"logs": {
+		"html": "storage/logs/coverage-report/infect.html"
+	},
+	 "mutators": {
+		"global-ignoreSourceCodeByRegex": [
+			"Assert::.*"
+		],
+		"@default": true,
+		"InstanceOf_": {
+			ignore: [
+				"Infection\\Mutator\\Boolean\\LogicalOr::canMutate"
+			]
+		},
+		"LogicalAnd": {
+			ignore: [
+				"Infection\\Mutator\\Boolean\\LogicalOr::canMutate"
+			]
+		},
+		"LogicalOr": {
+			ignore: [
+				"Infection\\Mutator\\Boolean\\LogicalOr::canMutate"
+			]
+		}
+	}
+}
